@@ -475,3 +475,44 @@ h1 {
         opacity: .5;
     }
 }
+
+/* ── MOBILE RESPONSIVE ── */
+@media (max-width: 600px) {
+    .map-scroll-container {
+        /* More scroll distance on mobile for smoother, slower panning */
+        height: 500vh;
+    }
+
+    .map-sticky-wrapper {
+        padding: 0.5rem;
+    }
+
+    #campus-map-svg {
+        width: 100%;
+        /* Fill the viewport height so viewBox panning fills the screen */
+        height: 90vh;
+        border-radius: 6px;
+    }
+
+    .map-header h2 {
+        font-size: clamp(1.4rem, 5vw, 2rem);
+    }
+
+    .map-header p {
+        font-size: 1rem;
+    }
+
+    .map-header .scroll-hint {
+        font-size: .6rem;
+    }
+
+    .legend {
+        gap: .4rem .8rem;
+        padding: .8rem;
+        font-size: .85rem;
+    }
+
+    .leg-item {
+        font-size: .85rem;
+    }
+}
